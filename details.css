@@ -65,7 +65,7 @@ color:black;
 
     display:flex;
 
-    gap: 40px;
+    gap: 60px;
     justify-content: center;
 justify-items: center;
 width: 50%;
@@ -86,6 +86,7 @@ width: 50%;
 padding: 1%;
     margin: auto;
     border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
     
     
@@ -96,7 +97,7 @@ padding: 1%;
     flex-direction: column;
 justify-items: center;
 justify-content:center ;
-animation: scrolling 10s linear infinite;
+margin-top:100px ;
 
 
 
@@ -104,6 +105,14 @@ animation: scrolling 10s linear infinite;
    
     
   
+
+}
+.right_part{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+  
+  ;
 }
 .film3{
    
@@ -115,12 +124,13 @@ animation: scrolling 10s linear infinite;
 justify-items: center;
 width: 50%;
     padding:1% ;
-    margin:auto
+    margin:auto;
+    border-radius:10px ;
 }
 
 .film4 { display:flex;
 
-    gap: 40px;
+    gap: 60px;
     justify-content: center;
 justify-items: center;
 width: 50%;
@@ -129,6 +139,7 @@ background-color: blueviolet;
 
 padding: 1%;
 margin: auto;
+border-radius: 10px;
 
 }
 .film5{ display:flex;
@@ -138,29 +149,38 @@ margin: auto;
 justify-items: center;
 width: 50%;
 
-background-color: red;
+background-color:red;
+border-radius: 10px ;
+
 
 padding: 1%;
 margin: auto;}
 img{width:300;
 
 height: 400px;}
-.film4 img{
+.film4 img,.film1 img,.film2 img,.film3 img,.film5 img{
     width:300px;
-    height: 400px;
+    height: 500px;
 }
-    
- @keyframes  scrolling {
-   
-        0% {
-          
-          transform: translateX(0);
-        }
-        100% {
-          transform: translateX(-80%);
-        }
- }*/
+  
+h1{
+    font-size: larger;
+    color:black;
+   text-align: left;
+}
+h3{
+font-size: medium;}
+.aime_comment{
+    display: flex;
+    justify-content: space-around;
+}
+.comment input{
+    background-color:transparent ;
+    border-radius: 10px;
+    color:black;
+}
+.right_part{display: flex;
+line-height: 1.5em;}
 
-    
     
     
