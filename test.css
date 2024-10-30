@@ -1,54 +1,49 @@
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    font-family: Arial, sans-serif;
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
 }
 
-.background-image {
-    background-image: url('image11.jpg'); /* Remplace par l'URL de ton image */
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    position: relative;
-    color: white;
+.caroussel {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden; /* Masque les éléments qui dépassent */
 }
 
-.header {
-    position: absolute;
-    top: 20px;
-    left: 20px;
+.films {
+  display: flex;
+  transition: transform 0.5s ease;
 }
 
-.header h1 {
-    margin: 0;
+.film {
+  min-width: 100%; /* Chaque film occupe toute la largeur du carrousel */
+  box-sizing: border-box;
+  text-align: center;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
+.film img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
+.prev {
+  left: 10px;
 }
 
-.content {
-    position: absolute;
-    bottom: 50px;
-    left: 20px;
-}
-
-.content h2 {
-    margin: 0;
-}
-
-.content p {
-    max-width: 600px;
+.next {
+  right: 10px;
 }
