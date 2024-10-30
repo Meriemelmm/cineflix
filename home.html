@@ -4,10 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" href="details.css">
+    <link rel="stylesheet" href="home.css">
     <title>cineflix</title>
     <style>
-        
+       .caroussel{
+        background: url('wednesday.jpg') cover no-repeat;
+        position: relative;
+       }
+       .photo {
+        width:100%;
+        height:100vh;
+        top:0;
+        position:absolute;
+        z-index: -1;
+
+       }
     </style>
 </head>
 <body>
@@ -16,14 +27,14 @@
         <nav class="container">
             <!-- div 1-------------- -->
             <div class="logo">
-               <img src="CinéFlix .png" alt="">
+               <img src="CinéFlix1 .png" alt="">
             </div>
             <!-- div 2-------------- -->
             <div class="link">
                 <ul>
                     <li><a href="home.html">home</a></li>
-                    <li><a href="about.html">details</a></li>
-                    <li><a href="product.html">my liste</a></li>
+                    <li><a href="detail.html">details</a></li>
+                    <li><a href="myliste.html">my liste</a></li>
                     
                 </ul>
             </div>
@@ -35,121 +46,63 @@
             
         </nav>
     </header>
-    <section class="films " >
+    <section class="caroussel">
+<div > <h1>    it' s time for enjoy </h1></div>
+<h2> POPULAR FILMS</h2>
+<div  class="films">
 
- <!-- film de numb 1 -->
-        <div class="film1">
-           <div class="image_left"> 
-            <img src="image 6.png" alt="">
-           </div>
-           <div class="right_part">
-             <h1> VANGUARD</h1>
-             <div class="etoils"> </div>
-            <h3> genre</h3>
-
-            <P>  Action, Aventure</P>
-            <h4> description du film </h4>
-            <p> "Vanguard" suit une équipe d'agents de sécurité privée, dirigée par Jackie Chan, qui lutte contre une organisation criminelle pour protéger un homme d'affaires et sa fille. Le film mélange action palpitante, cascades spectaculaires et humour caractéristique de Jackie Chan. </p>
-          <div class=" aime_comment">
-          <div class="like-section">
-            <button class="like-button" >❤️</button>
-            
-        </div>
-          <div class="comment"> <input type="text" placeholder=" comment"></div>
-           </div>
-        </div>
-        <!-- film de numb:2-->
-       </div>
-       <div class="film2">
-        <div class="image_left"> 
-         <img src="image 7.png" alt="">
-        </div>
-        <div class="right_part">
-          <h1> ADDAMAS FAMILY</h1>
-         <h3> gentre</h3>
-         <P>   comidie,fantastique</P>
-         <h4> description du film </h4>
-         <p>  La famille Addams, avec son humour noir et son style gothique, suit les aventures de Gomez, Morticia et leurs enfants, Wednesday et Pugsley. Cette joyeuse mais étrange famille fait face à des défis hilarants tout en préservant leur mode de vie excentrique. Un film plein de charme, d'esprit et de surprises qui célèbre l'amour familial dans toute sa diversité.</p>
-         <div class=" aime_comment">
-            <div class="like-section">
-              <button class="like-button" >❤️</button>
-              
-          </div>
-            <div class="comment"> <input type="text" placeholder=" comment"></div>
-             </div>
-        </div>
-     
-    </div>
-    <!-- div de film 3 -->
-    <div class="film3">
-        <div class="image_left"> 
-         <img src="image 4.png" alt="">
-        </div>
-        <div class="right_part">
-          <h1>genre</h3>
-         <P>   action,dramatique</P>
-         <h4> description du film </h4>
-         <p>  Dans "Every Last One of Them", un père se lance dans une quête désespérée pour retrouver sa fille disparue, découvrant un réseau de corruption et de trahison. Alors qu'il s'enfonce dans un monde sombre et dangereux, il doit affronter des adversaires redoutables pour sauver sa famille. Ce film captivant explore les thèmes de l'amour paternel, de la vengeance et de la justice.</p>
-         <div class=" aime_comment">
-            <div class="like-section">
-              <button class="like-button" >❤️</button>
-              
-          </div>
-            <div class="comment"> <input type="text" placeholder=" comment"></div>
-             </div>
-        </div>
-     
-    </div>
-    <!-- film de numb 4-->
-       
-    <div class="film4">
-        <div class="image_left"> 
-         <img src="image9.jpg" alt="">
-        </div>
-        <div class="right_part">
-          <h1>ALLADIN</h1>
-         <h3> genre</h3>
-         <P>   fantastique</P>
-         <h4> description du film </h4>
-         <p>  "Aladdin" raconte l'histoire d'un jeune homme de la rue qui découvre une lampe magique abritant un génie capable de réaliser des vœux. En tombant amoureux de la belle princesse Jasmine, Aladdin doit faire face au sorcier Jafar, qui veut s'emparer de la lampe. Ce conte enchanteur célèbre l'amour, l'amitié et la découverte de soi à travers des aventures extraordinaires.</p>
-         <div class=" aime_comment">
-            <div class="like-section">
-              <button class="like-button" >❤️</button>
-              
-          </div>
-            <div class="comment"> <input type="text" placeholder=" comment"></div>
-             </div>
-        </div>
-     
-    </div>
-    <!-- film 5 -->
-    <div class="film5">
-        <div class="image_left"> 
-         <img src="image10.jpg" alt="">
-        </div>
-        <div class="right_part">
-          <h1> Disenchanted</h1>
-         <h3> genre</h3>
-         <P>comidie,fantastique</P>
-         <h4> description du film </h4>
-         <p>  Dans "Disenchanted", Giselle, des années après avoir trouvé l'amour dans le monde réel, se rend compte que la vie n'est pas aussi parfaite qu'elle l'imaginait. Elle doit naviguer à travers les défis de la parentalité et des relations, tout en faisant face à une nouvelle menace magique. Ce film explore les thèmes de la réalité contre le rêve, tout en conservant une touche de magie et d'humour.</p>
-         <div class=" aime_comment">
-            <div class="like-section">
-              <button class="like-button" >❤️</button>
-              
-          </div>
-            <div class="comment"> <input type="text" placeholder=" comment"></div>
-             </div>
-        </div>
-     
-    </div>
-    
-       
-    
+      
 
 
+    <div class="film" id="film1">
+        <img src="image9.jpg" alt="ALLADIN">
+        <h3>ALLADIN</h3>
+        
+    </div>
+    <div class="film " id="film2">
+        <img src="image 7.png" alt="ADDAMAS FAMILY">
+        <h3> ADDAMAS FAMILY</h3>
+        
+    </div>
+    <div class="film" id="film1">
+        <img src="image 6.png" alt="Vanguard">
+        <h3>Vanguard</h3>
+        
+    </div>
+    <div class="film" id="film2">
+        <img src="image10.jpg" alt="Disenchanted">
+        <h3>Disenchanted</h3>
+        
+    </div>
+    <div class="film" id="film1">
+        <img src="image11.jpg" alt="Wish">
+        <h3>Wish</h3>
+        
+    </div>
+    <div class="film" id="film2">
+        <img src="image12.jpg" alt="SOUL">
+        <h3>SOUL</h3>
+        
+    </div>
+    <div class="film" id=" film1">
+        <img src="image14.jpg" alt="PINNOCCHIO">
+        <h3>PINNOCCHIO</h3>
+        </div>
+        
+   
+
+   
+
+
+
+
+     
 
     </section>
+
+
+   
+   
 
 
 
