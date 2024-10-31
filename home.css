@@ -1,6 +1,8 @@
 
 
-
+*{
+    box-sizing: border-box;
+}
 
 body {
     font-family: 'Inter', sans-serif;
@@ -72,12 +74,13 @@ h1{
     .films{background-color: black;
        
     display: flex;
-    overflow: hidden;
+   
     animation: scrolling 10s linear infinite;
 
     
 
-background-color: black;}
+background-color: black;
+overflow: scroll;}
     .film {
         background-color: #69264c;
         display: flex;
@@ -151,7 +154,9 @@ background-color: black;}
         text-align: center;
         font-size: 18px;
         margin: 10px 0;
+
     }
+    
     
     
     
