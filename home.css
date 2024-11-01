@@ -72,24 +72,28 @@ h1{
     .caroussel{
         width:90vw;
         margin:0 auto;
-
+        overflow-x: scroll;
     }
     
-    .films{background-color: black;
+    .films{
        
     display: flex;
    
-    overflow: scroll;
+    
     width:85%;
     margin:0 auto;
-
+ overflow-x: scroll;
 
    
    
 
     
 
-background-color: black;
+
+}
+a{
+    text-decoration: none;
+    color: #0a0608;
 }
     .film {
       
@@ -99,7 +103,7 @@ background-color: black;
         align-items: center;
         padding: 20px;
        margin:10px;
-        min-width: 160px;
+        min-width: 200px;
         border-radius: 15px;
         
         
@@ -109,7 +113,8 @@ background-color: black;
        
         align-items: center;
         position:relative;
-        background-color: red;
+    
+       
     }
     
     .film img {
@@ -171,8 +176,19 @@ background-color: black;
         margin: 10px 0;
 
     }
+    button{
+        width:80px;
+        height: 30px;
+        border-radius:15px ;
+        z-index: 1;
+        box-sizing: border-box;
+        background-color: #a2497d;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    button:hover{
+        cursor: pointer;
+    }
 
-   
 
     
     

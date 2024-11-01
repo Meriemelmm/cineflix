@@ -14,29 +14,28 @@ function filterCards() {
        
     });
 }
-//   const scrolling = document.querySelector('.films');
-//  scrolling.animate([
-//     { transform: 'translateX(0)' },
-//    { transform: 'translateX(-100vh)'
+ const scrolling = document.querySelector('.films');
+  scrolling.animate([
+     { transform: 'translateX(0)' },
+   { transform: 'translateX(-100vh)'
         
 
-//       }
-//  ], {
-//     duration: 10000, 
-//    iterations: Infinity 
-// });
+      }
+ ], {
+     duration: 50000, 
+   iterations: Infinity 
+});
 let left = document.querySelector('.prev');
 let right = document.querySelector('.nextt');
 let cartBox = document.querySelector('.films');
    
     
-    left.addEventListener('click', () => {
+    left.addEventListener('click', () => {        
         cartBox.scrollBy({
             top: 0,
             left: -240,
             behavior: "smooth",
           });
-          console.log('hello')
     });
 
 
@@ -50,10 +49,7 @@ let cartBox = document.querySelector('.films');
  });
  
     })
-    let detail = document.querySelector('.movie h4');
-    detail.addEventListener('click', () => {
-        detail.style.background color= "red"; // Change le fond de l'élément .movie
-    });
+    
     
 
 
