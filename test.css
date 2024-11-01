@@ -1,67 +1,33 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.film {
+  display: flex;
+  gap: 20px; /* réduit l'espace entre les éléments */
+  justify-content: center;
+  width: 80%; /* élargit le conteneur */
+  background-color: #d364a5; 
+  padding: 20px; /* augmente le rembourrage */
+  margin: auto;
+  border-radius: 10px; /* ajoute des bords arrondis */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* ajoute une ombre légère */
 }
 
-
-.slides {
-  width: 100%;
-  height: 100vh;
-  position: relative;
+.image_left img {
+  max-width: 100%; /* assure que l'image ne dépasse pas son conteneur */
+  height: auto; /* conserve le ratio de l'image */
+  border-radius: 8px; /* arrondit les coins de l'image */
 }
 
-.slide {
-  position: absolute;
-  inset: 0;
-  opacity: 0;
-  transition: 0.8s opacity ease-in;
-  transition-delay: 0.8s;
-
+.right_part {
+  display: flex;
+  flex-direction: column; /* aligne le texte verticalement */
+  justify-content: center; /* centre le contenu */
 }
 
-.slide[data-active] {
-  opacity: 1;
-  transition-delay: 0s;
-  z-index: 1;
+h1 {
+  font-size: 2em; /* taille de police adaptée */
+  color: #fff; /* couleur du texte pour le contraste */
 }
 
-.slide > img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
-.backButton {
-  position: absolute;
-  width: 24px;
-  height: 45px;
-  top: 50%;
-  left: 50px;
-  transform: translate(0%, 50%);
-  border: none;
-  background: url('/Images/Left Arrow.png');
-  z-index: 2;
-}
-
-.backButton:hover {
-  cursor: pointer;
-}
-
-.nextButton {
-  position: absolute;
-  width: 24px;
-  height: 45px;
-  top: 50%;
-  right: 50px;
-  transform: translate(0%, 50%);
-  border: none;
-  background: url('/Images/Right Arrow.png');
-  z-index: 2;
-}
-
-.nextButton:hover {
-  cursor: pointer;
+p {
+  color: #fff; /* couleur du texte pour le contraste */
+  margin-top: 10px; /* espace au-dessus du paragraphe */
 }

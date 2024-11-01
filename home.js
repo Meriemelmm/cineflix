@@ -13,22 +13,48 @@ function filterCards() {
         }
        
     });
-}//
-//const scrolling = document.querySelector('.films');
-//scrolling.animate([
-    //{ transform: 'translateX(0)' },
-    //{ transform: 'translateX(-100vh)'
+}
+//   const scrolling = document.querySelector('.films');
+//  scrolling.animate([
+//     { transform: 'translateX(0)' },
+//    { transform: 'translateX(-100vh)'
         
 
-    // }//
-//], {
-   // duration: 10000, // Durée de l'animation en millisecondes
-   // iterations: Infinity // Répète l'animation indéfiniment
-//});//
-//scrolling.scrollBy({
-    //Top: 0,
-    //Left: 100,
-   // Behaviour: smooth});//
+//       }
+//  ], {
+//     duration: 10000, 
+//    iterations: Infinity 
+// });
+let left = document.querySelector('.prev');
+let right = document.querySelector('.nextt');
+let cartBox = document.querySelector('.films');
+   
+    
+    left.addEventListener('click', () => {
+        cartBox.scrollBy({
+            top: 0,
+            left: -240,
+            behavior: "smooth",
+          });
+          console.log('hello')
+    });
+
+
+
+  
+    right.addEventListener('click', ()=> {
+        cartBox.scrollBy({
+            top: 0,
+            left: 240,
+            behavior: "smooth",
+ });
+ 
+    })
+    let detail = document.querySelector('.movie h4');
+    detail.addEventListener('click', () => {
+        detail.style.background color= "red"; // Change le fond de l'élément .movie
+    });
+    
 
 
   

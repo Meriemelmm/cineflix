@@ -69,28 +69,47 @@ h1{
     h2{
        font-size: x-large;
     }
+    .caroussel{
+        width:90vw;
+        margin:0 auto;
+
+    }
     
     .films{background-color: black;
        
     display: flex;
    
-    animation: scrolling 10s linear infinite;
-    width:100vh
+    overflow: scroll;
+    width:85%;
+    margin:0 auto;
+
+
+   
+   
 
     
 
 background-color: black;
 }
     .film {
+      
         background-color: #69264c;
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 20px;
        margin:10px;
-        width: 160px;
+        min-width: 160px;
         border-radius: 15px;
         
+        
+    }
+    .containerfilms{
+        display:flex;
+       
+        align-items: center;
+        position:relative;
+        background-color: red;
     }
     
     .film img {
@@ -98,6 +117,7 @@ background-color: black;
         height: 250px;
         border-radius: 10px;
         margin-bottom: 10px;
+       
     }
     .film #film1{background-color: #d364a5;}
    #film2{
@@ -117,6 +137,7 @@ background-color: black;
    
 .collection {
        
+    margin-top: 60px;
         display: flex;
         flex-wrap: wrap;
         gap: 40px;
@@ -150,7 +171,9 @@ background-color: black;
         margin: 10px 0;
 
     }
-    
+
+   
+
     
     
     
