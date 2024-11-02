@@ -39,7 +39,12 @@
                 <p>"Vanguard" suit une équipe d'agents de sécurité privée, dirigée par Jackie Chan, qui lutte contre une organisation criminelle pour protéger un homme d'affaires et sa fille.</p>
                 <div class="aime_comment">
                     <div class="like-section">
-                        <button class="like-button">❤️</button>
+               
+                        <button onclick="addcart()" style="width:50px;border-radius;:10px"> ❤️</button>
+
+
+                        <p class="count">0</p>
+
                     </div>
                     <div class="comment"><input type="text" placeholder="Comment"></div>
                 </div>
@@ -223,6 +228,46 @@
          
         </div>
     </section>
+    <script> // Initialiser le compteur de likes
+        var i = 0;
+        
+        // Fonction pour ajouter un like
+        function addcart() {
+            var count = document.querySelector('.count');
+        
+            // Vérifie si le nombre de likes est déjà dans le localStorage
+            if (localStorage.getItem('likes')) {
+                i = parseInt(localStorage.getItem('likes')); // Récupérer le nombre de likes
+            }
+        
+            i++; // Incrémenter le compteur
+            count.innerHTML = i; // Mettre à jour l'affichage
+        
+            // Sauvegarder le nouveau nombre de likes dans le localStorage
+            localStorage.setItem('likes', i);
+        }
+        
+        // Fonction pour charger le nombre de likes au chargement de la page
+        function loadLikes() {
+            var count = document.querySelector('.count');
+        
+            // Vérifie si le nombre de likes est dans le localStorage
+            if (localStorage.getItem('likes')) {
+                i = parseInt(localStorage.getItem('likes')); // Récupérer le nombre de likes
+                count.innerHTML = i; // Mettre à jour l'affichage
+            }
+        }
+        
+        // Charger les likes lorsque la page est prête
+        document.addEventListener('DOMContentLoaded', loadLikes);
+        
+    //     var i=0;
+    // function addcart(){
+    //     var count=document.querySelector('.count');
+    //     i++;
+    //     count.innerHTML=i;
+    // }
+        </script>
 </body>
 </html>
 

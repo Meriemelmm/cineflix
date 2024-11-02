@@ -49,10 +49,4 @@ let cartBox = document.querySelector('.films');
  });
  
     })
-
-      const mood=document.getElementById(toog)
     
-    
-
-
-  
