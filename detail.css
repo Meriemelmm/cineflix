@@ -1,8 +1,9 @@
 body {
     font-family: 'Inter', sans-serif;
     background-color: #f3edf0; 
-    color: #0a0608; 
+    color: #0a0608;  
 }
+
 
 .container {
     width: 85vw;
@@ -27,6 +28,9 @@ header nav ul {
     gap: 100px;
     list-style: none;
     padding: 0;
+    justify-content: center;
+    align-items:center ;
+    margin-right: 50px;
 }
 
 .container .logo img {
@@ -64,7 +68,10 @@ margin-top:50px ;
     display: flex;
     gap: 60px;
     justify-content: center;
-    width: 50%;
+    width: 80%;
+    height: 500px;
+    
+    align-items: center;
     background-color:#d364a5; 
     padding: 1%;
     margin: auto;
@@ -74,7 +81,7 @@ margin-top:50px ;
 
 .image_left img {
     width: 300px;
-    height: 400px;
+    height: 500px;
     border-radius: 10px;
 }
 
@@ -99,13 +106,57 @@ h3 {
 }
 
 
+
 .comment input {
     background-color: transparent;
     border-radius: 10px;
+    width:500px;
+    height: 30px;
     color: black;
+    margin-top: 10px;
+}
+.comment{
+    display: flex;
+   gap:10px;
+}
+.envoyer{
+    width:60px;
+    height:30px ;
+    border-radius: 10px;
+    background-color:#a2497d;
+    margin-top: 20px;
 }
 .like-section{ display:flex;
-gap:10px;}
+gap:10px;
+}
+
+.stars input {
+    display: none;
+}
+
+.stars label {
+    font-size: 2rem; /* Ajustez la taille des étoiles */
+    color: lightgray;
+    cursor: pointer;
+}
+
+.stars input:checked ~ label {
+    color: gold;
+}
+
+.stars label:hover,
+.stars label:hover ~ label {
+    color: gold;
+}
+.stars input {
+    display: none; 
+}
+
+.stars label {
+    font-size: 2rem; 
+}
+
+
 
 
  

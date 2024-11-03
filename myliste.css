@@ -3,7 +3,7 @@ body {
     background-color: #f3edf0; 
     color: #0a0608; 
 }
-
+/* 
 .container {
     width: 85vw;
     margin: 0 auto;
@@ -24,7 +24,9 @@ header .link {
 header nav ul {
     display: flex;
     justify-content: space-around;
-    gap: 100px;
+    gap: 50px;
+    margin-right: 50px;
+
     list-style: none;
     padding: 0;
 }
@@ -39,9 +41,9 @@ header nav li a {
     color: #a2497d;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: medium; 
-}
+} */
 
-.search input {
+/* .search input {
     background-color: transparent;
     border-radius: 10px;
     border: 1px solid #69264c;
@@ -51,6 +53,68 @@ header nav li a {
 
 .search input::placeholder {
     color: #0a0608; 
+} */
+
+
+.container {
+    width: 90vw; /* Augmentation pour de meilleures marges */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Centrer verticalement */
+}
+
+header {
+    margin-top: 40px;
+}
+
+header .link {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+} 
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    margin: 0; /* Suppression de la marge */
+    list-style: none;
+    padding: 0;
+}
+
+.container .logo img {
+    width: 50%; /* Ajustement pour les petits écrans */
+    height: auto;
+}
+
+header nav li a {
+    text-decoration: none;
+    color: #a2497d;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium; 
+}
+
+/* Media Queries pour améliorer la responsivité */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Colonne sur petits écrans */
+        align-items: center; /* Centre les éléments */
+    }
+
+    header nav ul {
+        flex-direction: column; /* Change en colonne */
+        gap: 15px; /* Réduction de l'écart */
+        margin-top: 10px; /* Ajout de marges */
+    }
+
+    .container .logo img {
+        width: 70%; /* Ajustement de la largeur pour les petits écrans */
+    }
+
+    header nav li a {
+        font-size: 1rem; /* Réduction de la taille de police */
+    }
 }
 
 
@@ -106,3 +170,5 @@ h1 {
 .btn_supprimer:hover, .btn_ajouter:hover {
     background-color: #8c3d67;
 }
+
+ 

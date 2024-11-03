@@ -11,7 +11,7 @@
     <header>
         <nav class="container">
             <div class="logo">
-               <img src="CinéFlix1 .png" alt="CineFlix Logo">
+               <img src="images/CinéFlix1 .png" alt="CineFlix Logo">
             </div>
             <div class="link">
                 <ul>
@@ -20,19 +20,38 @@
                     <li><a href="myliste.html">My List</a></li>
                 </ul>
             </div>
-            <div class="search">                
+            <!-- <div class="search">                
                 <input type="text" placeholder="Search">
-            </div>
+            </div> -->
         </nav>
     </header>
 
-    <section class="films">
+    <!-- <section class="films">
         <div class="film">
             <div class="image_left"> 
                 <img src="image 6.png" alt="Vanguard">
             </div>
             <div class="right_part">
                 <h1>Vanguard</h1>
+                <div class="stars">
+    
+                                
+                    <input type="radio" id="star1" value="1" />
+                    <label for="star1" title="1 étoile">★</label>
+                    
+                    <input type="radio" id="star2"  value="2" />
+                    <label for="star2" title="2 étoiles">★</label>
+
+                    <input type="radio" id="star3" value="3" />
+                    <label for="star3" title="3 étoiles">★</label>
+
+                    <input type="radio" id="star4" value="4" />
+                    <label for="star4" title="4 étoiles">★</label>
+
+                    <input type="radio" id="star5" value="5" />
+                    <label for="star5" title="5 étoiles">★</label>
+                    
+                </div>
                 <h3>Genre</h3>
                 <p>Action, Aventure</p>
                 <h4>Description du film</h4>
@@ -40,18 +59,60 @@
                 <div class="aime_comment">
                     <div class="like-section">
                
-                        <button onclick="addcart()" style="width:50px;border-radius;:10px"> ❤️</button>
+                        <button onclick="addcart()" style="width:50px; height: 40px;"> ❤️</button>
 
 
                         <p class="count">0</p>
 
                     </div>
-                    <div class="comment"><input type="text" placeholder="Comment"></div>
+                    <div class="comment">
+                        <input type="text" placeholder="Comment">
+                    <button class="envoyer">envoyer</button></div>
                 </div>
             </div>
-        </div>
-
-        <!-- film de numb:2-->
+        </div> -->
+        <section class="films">
+            <div class="film">
+                <div class="image_left"> 
+                    <img src="images/image 6.png" alt="Vanguard">
+                </div>
+                <div class="right_part">
+                    <h1>Vanguard</h1>
+                    <div class="stars" id="rating">
+                        <input type="radio" id="star1" name="rating" value="1" />
+                        <label for="star1" title="1 étoile">★ </label>
+                        
+                        <input type="radio" id="star2" name="rating" value="2" />
+                        <label for="star2" title="2 étoiles">★ </label>
+        
+                        <input type="radio" id="star3" name="rating" value="3" />
+                        <label for="star3" title="3 étoiles">★</label>
+        
+                        <input type="radio" id="star4" name="rating" value="4" />
+                        <label for="star4" title="4 étoiles">★</label>
+        
+                        <input type="radio" id="star5" name="rating" value="5" />
+                        <label for="star5" title="5 étoiles">★</label>
+                    </div>
+                    <h3>Genre</h3>
+                    <p>Action, Aventure</p>
+                    <h4>Description du film</h4>
+                    <p>"Vanguard" suit une équipe d'agents de sécurité privée, dirigée par Jackie Chan, qui lutte contre une organisation criminelle pour protéger un homme d'affaires et sa fille.</p>
+                    <div class="aime_comment">
+                        <div class="like-section">
+                            <button onclick="addcart()" style="width:50px; height: 40px;">❤️</button>
+                            <p class="count">0</p>
+                        </div>
+                        <div class="comment">
+                            <input type="text" placeholder="Comment">
+                            <button class="envoyer">envoyer</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- film de numb:2
        </div>
        <div class="film">
         <div class="image_left"> 
@@ -74,7 +135,7 @@
      
     </div>
     <!-- div de film 3 -->
-    <div class="film">
+    <!-- <div class="film">
         <div class="image_left"> 
          <img src="image 4.png" alt="">
         </div>
@@ -94,10 +155,10 @@
              </div>
         </div>
      
-    </div>
+    </div> -->
     <!-- film de numb 4-->
        
-    <div class="film">
+    <!-- <div class="film">
         <div class="image_left"> 
          <img src="image9.jpg" alt="">
         </div>
@@ -116,9 +177,9 @@
              </div>
         </div>
      
-    </div>
+    </div> -->
     <!-- film 5 -->
-    <div class="film">
+    <!-- <div class="film">
         <div class="image_left"> 
          <img src="image10.jpg" alt="">
         </div>
@@ -137,9 +198,9 @@
              </div>
         </div>
      
-    </div>
+    </div> -->
         <!-- film 6 -->
-        <div class="film">
+        <!-- <div class="film">
             <div class="image_left"> 
              <img src="HARRY POTTER.jpg" alt="">
             </div>
@@ -158,9 +219,9 @@
                  </div>
             </div>
          
-        </div>
+        </div> -->
          <!-- film 7 -->
-         <div class="film">
+         <!-- <div class="film">
             <div class="image_left"> 
              <img src="image11.jpg" alt="">
             </div>
@@ -179,9 +240,9 @@
                  </div>
             </div>
          
-        </div>
+        </div> -->
         <!-- film 8 -->
-        <div class="film">
+        <!-- <div class="film">
             <div class="image_left"> 
              <img src="image12.jpg" alt="">
             </div>
@@ -200,10 +261,10 @@
                  </div> 
             </div>
          
-        </div>
+        </div> -->
         <!-- film 9-->
            
-        <div class="film">
+        <!-- <div class="film">
             <div class="image_left"> 
              <img src="image14.jpg" alt="">
             </div>
@@ -216,17 +277,19 @@
 
 
 
-             </p>
-             <div class=" aime_comment">
+             </p> --> 
+             <!-- <div class="aime_comment">
                 <div class="like-section">
-                  <button class="like-button" >❤️</button>
-                  
-              </div>
-                <div class="comment"> <input type="text" placeholder=" comment"></div>
-                 </div>
+                    <button class="like-button">❤️</button>
+                </div>
+                <div class="comment">
+                    <input type="text" id="userComment" placeholder="Comment" onkeypress="handleKeyPress(event)">
+                </div>
             </div>
-         
-        </div>
+            <div class="comment-box"></div> <!-- Assure-toi d'avoir un conteneur pour les commentaires -->
+             
+             
+
     </section>
     <script> // Initialiser le compteur de likes
         var i = 0;
@@ -260,6 +323,16 @@
         
         // Charger les likes lorsque la page est prête
         document.addEventListener('DOMContentLoaded', loadLikes);
+        const stars = document.querySelectorAll('.stars input');
+
+stars.forEach(star => {
+    star.addEventListener('change', () => {
+        const rating = star.value;
+       
+        
+    });
+});
+
         
     //     var i=0;
     // function addcart(){
@@ -267,6 +340,12 @@
     //     i++;
     //     count.innerHTML=i;
     // }
+
+
+
+
+
+
         </script>
 </body>
 </html>
