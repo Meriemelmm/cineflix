@@ -6,11 +6,11 @@ body {
 }
 
 .container {
-    width: 90vw; /* Utilisation de 90% pour une meilleure responsivité */
+    width: 90vw; 
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne */
+    flex-wrap: wrap; 
 }
 
 header {
@@ -26,7 +26,7 @@ header .link {
 header nav ul {
     display: flex;
     justify-content: space-around;
-    gap: 50px; /* Réduction de l'écart pour les petits écrans */
+    gap: 50px; 
     list-style: none;
     padding: 0;
 }
@@ -57,26 +57,26 @@ header nav li a {
 h1 {
     text-align: center;
     margin-top: 80px;
-    font-size: 5vw; /* Utilisation de la largeur de la vue */
+    font-size: 5vw; 
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #a2497d;
 }
 
 h2 {
-    font-size: 2.5vw; /* Ajustement en fonction de la largeur de la vue */
+    font-size: 2.5vw; 
 }
 
 .caroussel {
     width: 90vw;
     margin: 0 auto;
-    overflow-x: auto; /* Permet de faire défiler horizontalement */
+    overflow-x: auto; 
 }
 
 .films {
     display: flex;
-    width: 100%; /* Utiliser 100% pour s'assurer qu'il occupe tout l'espace */
+    width: 100%;
     margin: 0 auto;
-    overflow-x: auto; /* Permet de faire défiler horizontalement */
+    overflow-x: auto; 
 }
 
 a {
@@ -91,7 +91,7 @@ a {
     align-items: center;
     padding: 20px;
     margin: 10px;
-    min-width: 180px; /* Réduction pour mieux s'adapter aux petits écrans */
+    min-width: 180px; 
     border-radius: 15px;
 }
 
@@ -103,7 +103,7 @@ a {
 
 .film img {
     width: 140px;
-    height: auto; /* Utilisation de la hauteur automatique pour garder le ratio */
+    height: auto; /
     border-radius: 10px;
     margin-bottom: 10px;
 }
@@ -119,15 +119,15 @@ a {
 }
 
 h3 {
-    font-size: 1rem; /* Ajustement pour les petits écrans */
+    font-size: 1rem; 
 }
 
 .next, .prev {
     position: absolute;
     width: 50px;
     height: 50px;
-    top: 50%; /* Positionnement centré verticalement */
-    transform: translateY(-50%); /* Ajustement du positionnement */
+    top: 50%; 
+    transform: translateY(-50%);
 }
 
 .prev {
@@ -140,7 +140,7 @@ h3 {
 
 @media (max-width: 768px) {
     header .link {
-        flex-direction: column; /* Changement à une colonne pour les petits écrans */
+        flex-direction: column; 
         gap: 5px;
     }
 
@@ -150,18 +150,18 @@ h3 {
     }
 
     h1 {
-        font-size: 6vw; /* Ajustement pour les petits écrans */
+        font-size: 6vw;
     }
 
     h2 {
-        font-size: 3vw; /* Ajustement pour les petits écrans */
+        font-size: 3vw; 
     }
 }
 
 
 
 
-/* body {
+ body {
     font-family: 'Inter', sans-serif;
      
     color: #0a0608;
